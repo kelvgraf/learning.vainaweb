@@ -143,6 +143,54 @@ Uma dessas novidades são as **tags semânticas**.
 </html>
 ```
 
+
+### <**details**>: Usado para inserir informações adicionais ele pode receber um atributo chamado open.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <details open>
+      <summary>Vai na Web</summary>
+      <p>Tem por missão democratizar o acesso às tecnologias digitais avançadas, reduzir as desigualdades e promover um futuro mais próspero e sustentável..</p>
+    </details>
+  </main>
+</body>
+</html>
+```
+
+### <**Article**>: É usado para conter informações que podem ser distribuídas independentemente do restante do site ou aplicativo em que aparecem.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    ...
+    <article>
+      <h2>Vai na Web ganha duas frentes: Corporate e Social EdTech</h2>
+      <p>O objetivo é colaborar com empresas na requalificação da força de trabalho para os desafios da Indústria 4.0 e, ao mesmo tempo, continuar promovendo educação digital, valores humanos e inclusão no setor tecnológico.</p>
+    </article>
+
+    <article>
+      <h2>Vai na Web é finalista em prêmio dedicado às mulheres da tecnologia global</h2>
+      <p>Women in Tech, que celebra mulheres e iniciativas notáveis na economia digital, vai acontecer dia 2 de dezembro em Lisboa.</p>
+    </article>
+    ...
+  </main>
+</body>
+</html>
+```
+
 ## Motivos para usar tags semânticas
 
 O uso de todas essas tags traz vários benefícios:

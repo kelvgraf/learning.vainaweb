@@ -77,7 +77,7 @@ Agrupando todas essas tags nós temos nosso primeiro formulário pronto :)
 </form>
 ```
 
-Há ainda muitos atributos úteis que não vimos ainda, por agora, veremos mais alguns dos mais usados.
+### Há ainda muitos atributos úteis que não vimos ainda, por agora, veremos mais alguns dos mais usados.
 
 1. \<textarea\>
 2. \<input type="radio"\>
@@ -86,8 +86,9 @@ Há ainda muitos atributos úteis que não vimos ainda, por agora, veremos mais 
 5. \<fieldsets\>
 6. \<legend\>
 
+<!--  -->
 
-Criando o primeiro textarea:
+5. Criando o primeiro textarea:
 
 Diferente do input, esse elemento pode aceitar textos maiores, ideal para quando queremos receber um texto com mais de uma linha.Ele aceita apenas um tipo de valor, o atributo name.
 
@@ -100,6 +101,111 @@ Diferente do input, esse elemento pode aceitar textos maiores, ideal para quando
   ...
 </form>
 ```
+
+6. Criando  Botão Radio:
+
+Parar cria-lo, usamos o input, e adicionamos o type radio. É necessário que todos os botões do conjunto tenham o mesmo name.Com botões de rádio, um usuário faz uma seleção de múltipla escolha. Assim, temos que definir o valor de entrada. Usando o atributo de value, podemos definir um valor específico para cada elemento input.
+
+```html
+<form>
+  ...
+   <input type="radio" name="dia" value="Segunda"> Segunda
+   <input type="radio" name="dia" value="Sabado"> Sábado
+   <input type="radio" name="dia" value="Domingo"> Domingo
+  ...
+</form>
+```
+
+É possível também pré-selecionar um botão de opção para o usuário, podemos usar o atributo checked.
+
+```html
+<form>
+  ...
+   <input type="radio" name="dia" value="Segunda"> Segunda
+   <input type="radio" name="dia" value="Sabado" checked> Sábado
+   <input type="radio" name="dia" value="Domingo"> Domingo
+  ...
+</form>
+```
+
+7. Criando  Checkbox:
+
+Usamos os mesmos atributos e padrões do radio buttons, mas para usá-lo mudamos o valor do type para checkbox.Com o checkbox, os usuários podem selecionar vários valores.
+
+```html
+<form>
+  ...
+   <input type="checkbox" name="dia" value="Segunda" checked> Segunda
+   <input type="checkbox" name="dia" value="Sabado"> Sábado
+   <input type="checkbox" name="dia" value="Domingo"> Domingo
+  ...
+</form>
+```
+
+8. Criando Select e Option:
+
+Para cria-la usaremos os elementos select e option. O elemento select envolve todas as opções.Cada opção é marcada usando o elemento option. 
+Cada elemento da lista fica em um option. Ao invés de checked, para pré-selecionar uma opção usamos o selected como atributo na opção que queremos fazer isso.
+
+```html
+<form>
+  ...
+   <select name="dia">
+     <option value="Segunda">Segunda</option>
+     <option value="Sabado">Sábado</option>
+     <option value="Domingo" selected>Domingo</option>
+   </select>
+  ...
+</form>
+```
+
+9. Criando Fieldsets:
+
+Usamos Fieldsets para agrupar os controles de formulário e os rótulos em seções organizadas. Assim como uma section, fieldset é um elemento de nível de bloco que envolve elementos relacionados dentro de um form, para melhor organização.
+
+```html
+<form>
+  ...
+  <fieldset>
+    <label>
+      Usuário
+      <input type="text" name="Usuario" placeholder="Usuário">
+    </label>
+     <label>
+      Senha
+      <input type="password" name="Password" placeholder="Digite sua senha">
+    </label>
+   </fieldset>
+  ...
+</form>
+```
+
+10. Criando Legend:
+
+Legend funciona como um título para o fieldset, ele pode envolver uma descrição dos controles do fieldset.
+
+```html
+<form>
+  ...
+  <fieldset>
+    <legend>Login:</legend>
+    <label>
+      Usuário
+      <input type="text" name="Usuario" placeholder="Usuário">
+    </label>
+     <label>
+      Senha
+      <input type="password" name="Password" placeholder="Digite sua senha">
+    </label>
+   </fieldset>
+  ...
+</form>
+```
+
+11. Outros
+
+Para desabilitar um campo por exemplo, usamos o atributo disabled.Para mostrar uma descrição do controle dentro do próprio campo input usamos o placeholder.Para tornar o preenchimento do campo como obrigatório usamos o required.
+
 
 ![thanks](https://media.giphy.com/media/psmj7c3DbrJKkbRYFj/giphy.gif)
 

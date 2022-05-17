@@ -75,6 +75,19 @@ Guarde isso:
 
 **A unidade de porcentagem sempre usará o elemento container como referência**
 
+## Viewport Width e Viewport Height
+
+As unidades relativas vw(viewport width) e vh(viewport height) utilizam a largura e altura da viewport.
+O vw, estabelece uma relação de porcentagem com a Viewport Width(vw), já o vh refere-se a Viewport Height.
+
+```css
+.box {
+  width: 50vw;
+  height: 50vh;
+  background-color: deepskyblue;
+}
+```
+
 ## em
 
 Outra unidade relativa é o **em**, muito usado para especificar tamanhos de fontes e espaçamentos. Essa unidade usa o tamanho da fonte do container mais próximo para calcular seu tamanho, vamos ao exemplo:
